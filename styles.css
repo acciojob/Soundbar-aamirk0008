@@ -1,1 +1,71 @@
 /*  your css code here. If applicable */
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #8e44ad;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: #6c3483;
+            color: white;
+            border: none;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: normal;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #5b2c6f;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .stop {
+            background-color: #6c3483;
+        }
+
+        .stop:hover {
+            background-color: #5b2c6f;
+        }
+
+        .playing {
+            background-color: #27ae60;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
